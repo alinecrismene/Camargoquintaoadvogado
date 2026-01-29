@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="pt-BR" class="h-full">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Linktree Jurídico</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&amp;family=Source+Sans+3:wght@400;500;600&amp;display=swap" rel="stylesheet">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+    body {
+      box-sizing: border-box;
+    }
+    
+    .font-heading {
+      font-family: 'Playfair Display', Georgia, serif;
+    }
+    
+    .font-body {
+      font-family: 'Source Sans 3', system-ui, sans-serif;
+    }
+    
+    .link-card {
+      transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    
+    .link-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 20px 40px rgba(0, 0, 0, 0.15);
+    }
+    
+    .link-card:active {
+      transform: translateY(-2px);
+    }
+    
+    .gradient-border {
+      position: relative;
+    }
+    
+    .gradient-border::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: inherit;
+      padding: 2px;
+      background: linear-gradient(135deg, #c0c0c0, #808080);
+      -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+      -webkit-mask-composite: xor;
+      mask-composite: exclude;
+    }
+    
+    .pulse-dot {
+      animation: pulse 2s infinite;
+    }
+    
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.7; transform: scale(1.1); }
+    }
+    
+    @keyframes fadeInUp {
+      from {
+        opacity: 0;
+        transform: translateY(20px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+    
+    @keyframes silkFlow {
+      0%, 100% {
+        background-position: 0% 50%;
+      }
+      50% {
+        background-position: 100% 50%;
+      }
+    }
+    
+    .silk-background {
+      background-size: 400% 400%;
+      animation: silkFlow 15s ease infinite;
+    }
+    
+    .animate-fade-in {
+      animation: fadeInUp 0.6s ease-out forwards;
+    }
+    
+    .delay-1 { animation-delay: 0.1s; }
+    .delay-2 { animation-delay: 0.2s; }
+    .delay-3 { animation-delay: 0.3s; }
+    .delay-4 { animation-delay: 0.4s; }
+    .delay-5 { animation-delay: 0.5s; }
+    
+    .silver-text {
+      background: linear-gradient(145deg, #e8e8e8 0%, #ffffff 25%, #c0c0c0 50%, #ffffff 75%, #a8a8a8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+      text-shadow: 0 2px 8px rgba(192, 192, 192, 0.3);
+      filter: drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3));
+    }
+  </style>
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+ </head>
+ <body class="h-full font-body">
+  <div id="app-container" class="h-full w-full overflow-auto silk-background" style="background: linear-gradient(135deg, #0f0f1e 0%, #1a1a2e 15%, #2d2d45 30%, #1a1a2e 45%, #16213e 60%, #2d3850 75%, #16213e 90%, #0f0f1e 100%), radial-gradient(ellipse at 20% 30%, rgba(192, 192, 192, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(220, 220, 220, 0.12) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%);">
+   <div class="max-w-md mx-auto px-6 py-12"><!-- Profile Section -->
+    <div class="text-center mb-10 animate-fade-in opacity-0"><!-- Profile Image -->
+     <div class="relative inline-block mb-5">
+      <div class="w-28 h-28 rounded-full gradient-border overflow-hidden" style="background: transparent;">
+       <div class="w-full h-full flex items-center justify-center">
+        <svg class="w-16 h-16" viewbox="0 0 64 64" fill="none" stroke="#c0c0c0" stroke-width="2"><!-- Base --> <line x1="20" y1="58" x2="44" y2="58" stroke-width="2.5" /> <!-- Coluna central --> <line x1="32" y1="10" x2="32" y2="58" stroke-width="2" /> <!-- Barra horizontal --> <line x1="12" y1="14" x2="52" y2="14" stroke-width="2" /> <!-- Prato esquerdo --> <line x1="16" y1="18" x2="16" y2="14" /> <path d="M 12 18 Q 16 22 20 18" stroke-width="1.5" fill="none" /> <line x1="12" y1="18" x2="20" y2="18" stroke-width="1.5" /> <!-- Prato direito --> <line x1="48" y1="18" x2="48" y2="14" /> <path d="M 44 18 Q 48 22 52 18" stroke-width="1.5" fill="none" /> <line x1="44" y1="18" x2="52" y2="18" stroke-width="1.5" /> <!-- Topo decorativo --> <circle cx="32" cy="10" r="2" fill="#c0c0c0" />
+        </svg>
+       </div>
+      </div>
+      <div class="absolute -bottom-1 -right-1 w-8 h-8 rounded-full flex items-center justify-center" style="background: linear-gradient(135deg, #c0c0c0, #808080);">
+       <svg class="w-4 h-4 text-white" fill="currentColor" viewbox="0 0 20 20"><path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+       </svg>
+      </div>
+     </div><!-- Profile Name -->
+     <h1 id="profile-name" class="font-heading text-5xl font-bold mb-2 silver-text">Camargo Quintão</h1>
+     <p id="profile-subtitle" class="text-sm tracking-widest uppercase" style="color: #c0c0c0;">Soluções Jurídicas Completas</p>
+    </div><!-- Links -->
+    <div class="space-y-4"><!-- WhatsApp - Urgente --> <a href="https://wa.me/5511910765767?text=Ol%C3%A1,%20preciso%20de%20atendimento%20jur%C3%ADdico%20urgente." target="_blank" rel="noopener noreferrer" id="link-whatsapp" class="link-card block rounded-2xl p-4 gradient-border animate-fade-in opacity-0 delay-1" style="background: linear-gradient(135deg, rgba(192, 192, 192, 0.15), rgba(128, 128, 128, 0.1));">
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #25D366, #128C7E);">
+        <svg class="w-6 h-6 text-white" fill="currentColor" viewbox="0 0 24 24"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z" />
+        </svg>
+       </div>
+       <div class="flex-1 min-w-0 text-center">
+        <div class="flex items-center justify-center gap-2 mb-1"><span class="pulse-dot w-2 h-2 rounded-full" style="background: #ef4444;"></span> <span class="text-xs font-semibold uppercase tracking-wider" style="color: #ef4444;">Urgente</span>
+        </div><span id="link-whatsapp-text" class="font-semibold text-base block uppercase tracking-widest silver-text pulse-dot">Atendimento Jurídico Imediato</span>
+       </div>
+       <svg class="w-5 h-5 flex-shrink-0" style="color: #c0c0c0;" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+       </svg>
+      </div></a> <!-- Agendar Consulta --> <a href="mailto:camargoquintao.juridico@gmail.com?subject=Solicita%C3%A7%C3%A3o%20de%20Consulta%20Jur%C3%ADdica&amp;body=Ol%C3%A1,%0D%0A%0D%0AGostaria%20de%20agendar%20uma%20consulta%20jur%C3%ADdica.%0D%0A%0D%0APrefer%C3%AAncia:%20(%20)%20Presencial%20(%20)%20Online%0D%0A%0D%0ANome:%0D%0ATelefone:%0D%0AAssunto:%0D%0A%0D%0AObrigado!" target="_blank" rel="noopener noreferrer" id="link-agenda" class="link-card block rounded-2xl p-4 gradient-border animate-fade-in opacity-0 delay-2" style="background: transparent;">
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #c0c0c0, #808080);">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><rect x="3" y="4" width="18" height="18" rx="2" ry="2" /> <line x1="16" y1="2" x2="16" y2="6" /> <line x1="8" y1="2" x2="8" y2="6" /> <line x1="3" y1="10" x2="21" y2="10" /> <path d="M8 14h.01M12 14h.01M16 14h.01M8 18h.01M12 18h.01" />
+        </svg>
+       </div>
+       <div class="flex-1 min-w-0 text-center"><span id="link-agenda-text" class="font-semibold text-base block uppercase tracking-widest silver-text">Agendar Consulta</span> <span class="text-base font-semibold uppercase tracking-widest silver-text">Presencial/Online</span>
+       </div>
+       <svg class="w-5 h-5 flex-shrink-0" style="color: #c0c0c0;" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+       </svg>
+      </div></a> <!-- Áreas de Atuação --> <a href="#" id="link-areas" class="link-card block rounded-2xl p-4 gradient-border animate-fade-in opacity-0 delay-3" style="background: transparent;">
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #4a5568, #2d3748);">
+        <svg class="w-6 h-6" style="color: #c0c0c0;" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M3 21h18M3 10h18M3 7l9-4 9 4M4 10v11M20 10v11M8 14v3M12 14v3M16 14v3" />
+        </svg>
+       </div><span id="link-areas-text" class="font-semibold text-base flex-1 text-center uppercase tracking-widest silver-text">Áreas de Atuação Jurídica</span>
+       <svg class="w-5 h-5 flex-shrink-0" style="color: #c0c0c0;" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+       </svg>
+      </div></a> <!-- Guia Gratuito --> <a href="#" id="link-guia" class="link-card block rounded-2xl p-4 gradient-border animate-fade-in opacity-0 delay-4" style="background: transparent;">
+      <div class="flex items-center gap-4">
+       <div class="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style="background: linear-gradient(135deg, #1e3a8a, #1e40af);">
+        <svg class="w-6 h-6 text-white" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z" /> <polyline points="14,2 14,8 20,8" /> <line x1="16" y1="13" x2="8" y2="13" /> <line x1="16" y1="17" x2="8" y2="17" /> <polyline points="10,9 9,9 8,9" />
+        </svg>
+       </div>
+       <div class="flex-1 min-w-0 text-center"><span id="link-guia-text" class="font-semibold text-base block uppercase tracking-widest silver-text">Guia Jurídico Gratuito</span> <span class="text-xs" style="color: #48bb78;">Download grátis</span>
+       </div>
+       <svg class="w-5 h-5 flex-shrink-0" style="color: #c0c0c0;" fill="none" stroke="currentColor" stroke-width="2" viewbox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+       </svg>
+      </div></a>
+    </div><!-- Footer -->
+    <div class="mt-12 text-center animate-fade-in opacity-0 delay-5">
+     <div class="flex items-center justify-center gap-6 mb-6"><a href="https://www.instagram.com/camargoquintao.adv/" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110" style="background: rgba(192, 192, 192, 0.2);">
+       <svg class="w-5 h-5" style="color: #c0c0c0;" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
+       </svg></a> <a href="https://www.google.com/maps/search/?api=1&amp;query=Camargo+Quintão+Advocacia" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110" style="background: rgba(192, 192, 192, 0.2);">
+       <svg class="w-5 h-5" style="color: #c0c0c0;" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z" />
+       </svg></a> <a href="mailto:contato@camargoquintao.adv.br" target="_blank" rel="noopener noreferrer" class="w-10 h-10 rounded-full flex items-center justify-center transition-all hover:scale-110" style="background: rgba(192, 192, 192, 0.2);">
+       <svg class="w-5 h-5" style="color: #c0c0c0;" fill="currentColor" viewbox="0 0 24 24"><path d="M12 2C6.486 2 2 6.486 2 12s4.486 10 10 10 10-4.486 10-10S17.514 2 12 2zm0 18c-4.411 0-8-3.589-8-8s3.589-8 8-8 8 3.589 8 8-3.589 8-8 8z" /> <path d="M12 6c-3.309 0-6 2.691-6 6s2.691 6 6 6 6-2.691 6-6-2.691-6-6-6zm0 10c-2.206 0-4-1.794-4-4s1.794-4 4-4 4 1.794 4 4-1.794 4-4 4z" /> <circle cx="12" cy="12" r="2" />
+       </svg></a>
+     </div>
+     <p class="text-xs" style="color: rgba(192, 192, 192, 0.6);">© 2024 • Todos os direitos reservados</p>
+    </div>
+   </div>
+  </div>
+  <script>
+    const defaultConfig = {
+      profile_name: 'Camargo Quintão',
+      profile_subtitle: 'Soluções Jurídicas Completas',
+      link_whatsapp: 'Atendimento Jurídico Imediato',
+      link_agenda: 'Agendar Consulta',
+      link_areas: 'Áreas de Atuação Jurídica',
+      link_guia: 'Guia Jurídico Gratuito',
+      background_color: '#1a1a2e',
+      accent_color: '#c0c0c0',
+      text_color: '#f5f5f5',
+      card_color: 'transparent',
+      highlight_color: '#48bb78'
+    };
+
+    async function onConfigChange(config) {
+      const profileName = document.getElementById('profile-name');
+      const profileSubtitle = document.getElementById('profile-subtitle');
+      const linkWhatsappText = document.getElementById('link-whatsapp-text');
+      const linkAgendaText = document.getElementById('link-agenda-text');
+      const linkAreasText = document.getElementById('link-areas-text');
+      const linkGuiaText = document.getElementById('link-guia-text');
+
+      if (profileName) {
+        profileName.textContent = config.profile_name || defaultConfig.profile_name;
+        profileName.classList.add('silver-text');
+      }
+      
+      if (profileSubtitle) {
+        profileSubtitle.textContent = config.profile_subtitle || defaultConfig.profile_subtitle;
+        profileSubtitle.style.color = config.accent_color || defaultConfig.accent_color;
+      }
+      
+      if (linkWhatsappText) {
+        linkWhatsappText.textContent = config.link_whatsapp || defaultConfig.link_whatsapp;
+        linkWhatsappText.classList.add('silver-text');
+      }
+      
+      if (linkAgendaText) {
+        linkAgendaText.textContent = config.link_agenda || defaultConfig.link_agenda;
+        linkAgendaText.classList.add('silver-text');
+      }
+      
+      if (linkAreasText) {
+        linkAreasText.textContent = config.link_areas || defaultConfig.link_areas;
+        linkAreasText.classList.add('silver-text');
+      }
+      
+      if (linkGuiaText) {
+        linkGuiaText.textContent = config.link_guia || defaultConfig.link_guia;
+        linkGuiaText.classList.add('silver-text');
+      }
+
+      const appContainer = document.getElementById('app-container');
+      if (appContainer) {
+        const bgColor = config.background_color || defaultConfig.background_color;
+        appContainer.style.background = `linear-gradient(135deg, #0f0f1e 0%, ${bgColor} 15%, #2d2d45 30%, ${bgColor} 45%, #16213e 60%, #2d3850 75%, #16213e 90%, #0f0f1e 100%), radial-gradient(ellipse at 20% 30%, rgba(192, 192, 192, 0.15) 0%, transparent 50%), radial-gradient(ellipse at 80% 70%, rgba(220, 220, 220, 0.12) 0%, transparent 50%), radial-gradient(ellipse at 50% 50%, rgba(255, 255, 255, 0.08) 0%, transparent 60%)`;
+      }
+
+      const accentColor = config.accent_color || defaultConfig.accent_color;
+      document.querySelectorAll('[style*="color: #c0c0c0"]').forEach(el => {
+        el.style.color = accentColor;
+      });
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              config.background_color = value;
+              window.elementSdk.setConfig({ background_color: value });
+            }
+          },
+          {
+            get: () => config.card_color || defaultConfig.card_color,
+            set: (value) => {
+              config.card_color = value;
+              window.elementSdk.setConfig({ card_color: value });
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              config.text_color = value;
+              window.elementSdk.setConfig({ text_color: value });
+            }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (value) => {
+              config.accent_color = value;
+              window.elementSdk.setConfig({ accent_color: value });
+            }
+          },
+          {
+            get: () => config.highlight_color || defaultConfig.highlight_color,
+            set: (value) => {
+              config.highlight_color = value;
+              window.elementSdk.setConfig({ highlight_color: value });
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: undefined,
+        fontSizeable: undefined
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ['profile_name', config.profile_name || defaultConfig.profile_name],
+        ['profile_subtitle', config.profile_subtitle || defaultConfig.profile_subtitle],
+        ['link_whatsapp', config.link_whatsapp || defaultConfig.link_whatsapp],
+        ['link_agenda', config.link_agenda || defaultConfig.link_agenda],
+        ['link_areas', config.link_areas || defaultConfig.link_areas],
+        ['link_guia', config.link_guia || defaultConfig.link_guia]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9c5a4345a602544b',t:'MTc2OTcwNTc4NS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
