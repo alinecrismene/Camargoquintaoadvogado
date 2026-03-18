@@ -101,6 +101,20 @@
       .hero-logo{height: 80px}
     }
 
+    .hero-logo-mobile{
+      display: block;
+      max-width: 180px;
+      height: auto;
+      margin: 0 auto 20px;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.4));
+    }
+    @media (min-width: 480px){
+      .hero-logo-mobile{max-width: 220px; margin-bottom: 24px}
+    }
+    @media (min-width: 720px){
+      .hero-logo-mobile{display: none}
+    }
+
     .pill{
       display:inline-flex; align-items:center; gap:10px;
       padding: 8px 12px;
@@ -732,6 +746,25 @@
     }
     .skip-link:focus{left: 10px}
 
+    /* Cabeçalho e hero ajustados para smartphones */
+    @media (max-width: 719px){
+      .header-inner{height: 54px; gap: 8px}
+      .brand{gap: 8px; min-width: auto}
+      .brand-mark{width: 36px; height: 36px; border-radius: 10px}
+      .brand-title strong{font-size: 13.5px}
+      .brand-title span{font-size: 10.5px}
+      .hamburger{width: 40px; height: 40px; border-radius: 10px}
+      .header-actions{gap: 6px}
+      main{padding-top: 68px}
+      .mobile-nav{top: 54px}
+      .hero::before{
+        background:
+          radial-gradient(900px 500px at 15% 10%, rgba(255,255,255,.20), transparent 60%),
+          radial-gradient(900px 500px at 85% 90%, rgba(180,192,220,.22), transparent 65%),
+          linear-gradient(135deg, #1E2438 0%, #1E2438 40%, #151A2B 100%) !important;
+      }
+    }
+
     /* ===== SMARTPHONE PEQUENO (até 374px) ===== */
     @media (max-width: 374px){
       .hero h1{font-size: 24px; line-height: 1.1}
@@ -740,11 +773,12 @@
       #sobre .section-title{font-size: 22px}
       #depoimentos .section-title{font-size: 22px}
       #areas .section-title{font-size: 24px}
-      .brand-mark{width: 36px; height: 36px}
-      .brand-title strong{font-size: 13px}
-      .brand-title span{font-size: 10px}
-      .header-inner{height: 58px; gap: 6px}
-      main{padding-top: 72px}
+      .brand-mark{width: 32px; height: 32px}
+      .brand-title strong{font-size: 12.5px}
+      .brand-title span{font-size: 9.5px}
+      .header-inner{height: 48px; gap: 4px}
+      main{padding-top: 62px}
+      .mobile-nav{top: 48px}
       .container{padding: 0 12px}
       .card.pad{padding: 12px}
       .hero-ctas .btn{font-size: 13px; padding: 10px 14px; width: 100%}
@@ -972,6 +1006,7 @@
     <section class="hero">
       <div class="container hero-grid">
         <div class="reveal">
+          <img src="assets/hero-logo-transparente.png" alt="Logo Dr. Camargo Quintão" class="hero-logo-mobile" />
           <span class="pill">
             <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
               <path d="M12 2l3 7 7 .6-5.3 4.5 1.7 6.9L12 17.8 5.6 21 7.3 14.1 2 9.6 9 9l3-7Z" fill="rgba(243,244,250,.95)"/>
