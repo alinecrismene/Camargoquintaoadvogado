@@ -103,16 +103,19 @@
 
     .hero-logo-mobile{
       display: block;
-      max-width: 180px;
+      max-width: 150px;
       height: auto;
-      margin: 0 auto 20px;
+      margin: 0 0 16px;
       filter: drop-shadow(0 8px 20px rgba(0,0,0,.4));
     }
     @media (min-width: 480px){
-      .hero-logo-mobile{max-width: 220px; margin-bottom: 24px}
+      .hero-logo-mobile{max-width: 180px; margin-bottom: 18px}
     }
     @media (min-width: 720px){
-      .hero-logo-mobile{display: none}
+      .hero-logo-mobile{max-width: 200px; margin-bottom: 20px}
+    }
+    @media (min-width: 1024px){
+      .hero-logo-mobile{max-width: 220px; margin-bottom: 22px}
     }
 
     .pill{
@@ -325,7 +328,6 @@
       position:absolute;
       inset:0;
       background:
-        url("assets/hero-logo-transparente.png") right 6% center / 520px auto no-repeat,
         radial-gradient(900px 500px at 15% 10%, rgba(255,255,255,.20), transparent 60%),
         radial-gradient(900px 500px at 85% 90%, rgba(180,192,220,.22), transparent 65%),
         linear-gradient(135deg, #1E2438 0%, #1E2438 40%, #151A2B 100%);
@@ -757,12 +759,6 @@
       .header-actions{gap: 6px}
       main{padding-top: 68px}
       .mobile-nav{top: 54px}
-      .hero::before{
-        background:
-          radial-gradient(900px 500px at 15% 10%, rgba(255,255,255,.20), transparent 60%),
-          radial-gradient(900px 500px at 85% 90%, rgba(180,192,220,.22), transparent 65%),
-          linear-gradient(135deg, #1E2438 0%, #1E2438 40%, #151A2B 100%) !important;
-      }
     }
 
     /* ===== SMARTPHONE PEQUENO (até 374px) ===== */
