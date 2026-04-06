@@ -1,0 +1,1578 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="description" content="Advogado de Direito Médico em Vitória (ES) e São Paulo, com atuação em Direito Civil, Direito Tributário e Direito Previdenciário. Atuação em casos de bloqueio de salário, RMC em cartão de crédito e revisão de benefício previdenciário. Defesa jurídica estratégica, atendimento on-line para todo o Brasil e consulta personalizada pelo WhatsApp." />
+  <meta name="robots" content="index, follow" />
+  <meta name="theme-color" content="#1E2438" />
+  <title>Advogado de Direito Médico em Vitória (ES) | Dr. Camargo Quintão</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <style>
+    :root{
+      --bg:#1E2438;
+      --surface:#242C47;
+      --surface-2:#2B3554;
+      --text:#F6F7FB;
+      --muted:#C2C6DC;
+      --line:rgba(255,255,255,.12);
+      --gold:#F3F4FA;
+      --gold-2:#DADDF0;
+      --green:#0F7C6B;
+      --green-2:#13A88D;
+      --shadow: 0 18px 55px rgba(0,0,0,.35);
+      --radius: 18px;
+      --radius-sm: 14px;
+      --container: 1120px;
+      --ease: cubic-bezier(.2,.8,.2,1);
+    }
+
+    *{box-sizing:border-box; -webkit-tap-highlight-color: transparent}
+    html{scroll-behavior:smooth; -webkit-text-size-adjust: 100%; text-size-adjust: 100%}
+    body{
+      margin:0;
+      font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      color:var(--text);
+      background:
+        radial-gradient(900px 520px at 12% 14%, rgba(180,192,220,.16), transparent 62%),
+        radial-gradient(820px 520px at 92% 12%, rgba(120,140,190,.18), transparent 60%),
+        radial-gradient(980px 520px at 22% 8%, rgba(255,255,255,.05), transparent 62%),
+        linear-gradient(180deg, #1E2438 0%, #1E2438 45%, var(--bg) 70%, #151A2B 100%);
+      line-height:1.55;
+      -webkit-font-smoothing:antialiased;
+      text-rendering:optimizeLegibility;
+    }
+
+    a{color:inherit; text-decoration:none}
+    img{max-width:100%; display:block}
+
+    .container{max-width:var(--container); margin:0 auto; padding:0 18px}
+    .btn{
+      display:inline-flex; align-items:center; justify-content:center; gap:10px;
+      border:1px solid transparent;
+      border-radius: 999px;
+      padding: 12px 16px;
+      min-height: 44px;
+      font-weight: 650;
+      font-size: 14px;
+      letter-spacing:.2px;
+      cursor:pointer;
+      transition: transform .18s var(--ease), box-shadow .18s var(--ease), background .18s var(--ease), border-color .18s var(--ease), opacity .18s var(--ease);
+      user-select:none;
+      will-change:transform;
+      touch-action: manipulation;
+    }
+    .btn:focus-visible{outline:3px solid rgba(243,244,250,.35); outline-offset:3px}
+    .btn:hover{transform: translateY(-1px)}
+    .btn:active{transform: translateY(0)}
+    .btn-primary{
+      background: linear-gradient(135deg, var(--gold) 0%, var(--gold-2) 100%);
+      color:#14173A;
+      box-shadow: 0 12px 28px rgba(255,255,255,.12);
+    }
+    .btn-primary:hover{box-shadow: 0 16px 34px rgba(255,255,255,.16)}
+    .btn-pulse{
+      position:relative;
+      animation: btnPulse 1.6s var(--ease) infinite;
+    }
+    @keyframes btnPulse{
+      0%{transform: translateY(0) scale(1); box-shadow: 0 0 0 0 rgba(19,168,141,.55);}
+      50%{transform: translateY(-1px) scale(1.03); box-shadow: 0 0 0 10px rgba(19,168,141,0);}
+      100%{transform: translateY(0) scale(1); box-shadow: 0 0 0 0 rgba(19,168,141,0);}
+    }
+    .btn-ghost{
+      background: rgba(255,255,255,.04);
+      border-color: rgba(255,255,255,.12);
+      color: var(--text);
+    }
+    .btn-ghost:hover{border-color: rgba(243,244,250,.30); background: rgba(255,255,255,.06)}
+
+    .hero-logo{
+      height: 64px;
+      width:auto;
+      filter: drop-shadow(0 12px 26px rgba(0,0,0,.6));
+      mix-blend-mode: screen;
+    }
+    @media (min-width: 720px){
+      .hero-logo{height: 80px}
+    }
+
+    .hero-logo-mobile{
+      display: block;
+      max-width: 200px;
+      height: auto;
+      margin: 0 0 18px;
+      filter: drop-shadow(0 8px 20px rgba(0,0,0,.4));
+    }
+    @media (min-width: 480px){
+      .hero-logo-mobile{max-width: 240px; margin-bottom: 20px}
+    }
+    @media (min-width: 720px){
+      .hero-logo-mobile{max-width: 270px; margin-bottom: 22px}
+    }
+    @media (min-width: 1024px){
+      .hero-logo-mobile{max-width: 300px; margin-bottom: 24px}
+    }
+
+    .pill{
+      display:inline-flex; align-items:center; gap:10px;
+      padding: 8px 12px;
+      border-radius: 999px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.12);
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 12.5px;
+      letter-spacing:.2px;
+    }
+
+    .icon{
+      width: 18px; height: 18px; display:inline-block; flex:0 0 auto;
+    }
+    .header-flag{
+      width: 30px;
+      height: 30px;
+    }
+
+    header.header{
+      position: fixed;
+      top:0; left:0; right:0;
+      z-index: 50;
+      background: rgba(20,23,58,.70);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+    }
+    .header-inner{
+      height: 68px;
+      display:flex;
+      align-items:center;
+      justify-content: space-between;
+      gap: 14px;
+    }
+
+    .brand{
+      display:flex; align-items:center; gap:12px; min-width: 180px;
+    }
+    .brand-mark{
+      width: 48px; height: 48px;
+      border-radius: 14px;
+      display:grid; place-items:center;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.10);
+      overflow:hidden;
+    }
+    .brand-mark img{
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transform: scale(1.05);
+    }
+    .brand-title{
+      display:flex; flex-direction:column; line-height:1.1;
+    }
+    .brand-title strong{
+      font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      letter-spacing: .2px;
+      font-size: 15.5px;
+    }
+    .brand-title span{font-size:12px; color: var(--muted)}
+
+    nav.nav{
+      display:none;
+      align-items:center;
+      gap: 6px;
+    }
+    .nav a{
+      padding: 10px 10px;
+      border-radius: 12px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 13.5px;
+      transition: background .18s var(--ease), color .18s var(--ease);
+    }
+    .nav a:hover{background: rgba(255,255,255,.05); color: var(--text)}
+
+    .header-actions{display:flex; align-items:center; gap:10px}
+
+    .hamburger{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.12);
+      display:grid; place-items:center;
+      touch-action: manipulation;
+      cursor: pointer;
+    }
+    .hamburger:hover{border-color: rgba(243,244,250,.30)}
+    .hamburger span{
+      display:block;
+      width: 18px; height: 2px;
+      background: rgba(245,247,251,.9);
+      position:relative;
+      border-radius: 2px;
+    }
+    .hamburger span::before,
+    .hamburger span::after{
+      content:"";
+      position:absolute; left:0;
+      width: 18px; height: 2px;
+      background: rgba(245,247,251,.9);
+      border-radius: 2px;
+      transition: transform .18s var(--ease), top .18s var(--ease), opacity .18s var(--ease);
+    }
+    .hamburger span::before{top:-6px}
+    .hamburger span::after{top:6px}
+
+    body.nav-open .hamburger span{background: transparent}
+    body.nav-open .hamburger span::before{top:0; transform: rotate(45deg)}
+    body.nav-open .hamburger span::after{top:0; transform: rotate(-45deg)}
+
+    .mobile-nav{
+      display:none;
+      position: fixed;
+      top: 68px; left:0; right:0;
+      background: rgba(7,20,34,.92);
+      backdrop-filter: blur(10px);
+      border-bottom: 1px solid rgba(255,255,255,.08);
+      z-index: 49;
+    }
+    body.nav-open .mobile-nav{display:block}
+    .mobile-nav .container{padding: 10px 18px 16px}
+    .mobile-nav a{
+      display:flex; align-items:center; justify-content:space-between;
+      padding: 14px 14px;
+      min-height: 48px;
+      border-radius: 14px;
+      color: var(--text);
+      font-weight: 650;
+      font-size: 15px;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      margin-top: 10px;
+      touch-action: manipulation;
+    }
+    .mobile-nav a small{color: var(--muted); font-weight: 600}
+
+    main{padding-top: 84px}
+
+    .section{padding: 54px 0}
+    .section-title{
+      font-family: "Montserrat", system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      font-size: 28px;
+      letter-spacing: .2px;
+      margin: 0 0 10px;
+    }
+    /* Destaque específico para "Sobre" */
+    #sobre .section-title{
+      text-align:center;
+      font-family: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 26px;
+      letter-spacing:.3px;
+      line-height: 1.15;
+    }
+    #sobre .section-subtitle{
+      text-align:justify;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    /* Destaque específico para "Depoimentos" */
+    #depoimentos .section-title{
+      text-align:center;
+      font-family: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 26px;
+      letter-spacing:.3px;
+      line-height: 1.15;
+    }
+    #depoimentos .section-subtitle{
+      text-align:center;
+      margin: 0 auto;
+      font-size: 14px;
+      line-height: 1.7;
+    }
+    /* Destaque específico para "Áreas de atuação" */
+    #areas .section-title{
+      text-align:center;
+      font-family: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 34px;
+      letter-spacing: .35px;
+      margin-bottom: 14px;
+      line-height: 1.05;
+    }
+    #areas .section-subtitle{
+      text-align:center;
+      margin: 0 auto;
+      font-size: 14.5px;
+      line-height: 1.7;
+    }
+    .section-subtitle{
+      margin:0;
+      color: var(--muted);
+      max-width: 68ch;
+    }
+
+    .hero{
+      position:relative;
+      padding: 28px 0 38px;
+      overflow:hidden;
+      min-height: 62vh;
+      display:flex;
+      align-items:center;
+    }
+    .hero::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(900px 500px at 15% 10%, rgba(255,255,255,.20), transparent 60%),
+        radial-gradient(900px 500px at 85% 90%, rgba(180,192,220,.22), transparent 65%),
+        linear-gradient(135deg, #1E2438 0%, #1E2438 40%, #151A2B 100%);
+      opacity:1;
+      z-index:-2;
+    }
+    .hero::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(900px 520px at 15% 0%, rgba(19,168,141,.18), transparent 60%),
+        radial-gradient(900px 520px at 85% 100%, rgba(0,0,0,.40), transparent 70%);
+      mix-blend-mode:soft-light;
+      z-index:-1;
+      pointer-events:none;
+    }
+    .hero-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 18px;
+      align-items:flex-start;
+    }
+    .hero .reveal{
+      max-width: 640px;
+    }
+    .hero h1{
+      font-family: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 34px;
+      line-height: 1.05;
+      letter-spacing: .2px;
+      margin: 12px 0 12px;
+    }
+    .hero p.lead{
+      margin:0 0 18px;
+      color: var(--muted);
+      font-size: 15.5px;
+      max-width: 60ch;
+    }
+    .hero-ctas{
+      display:flex;
+      flex-wrap:wrap;
+      gap: 10px;
+      margin-top: 16px;
+      align-items:stretch;
+      justify-content:flex-start;
+    }
+    .hero-ctas .btn{
+      flex:0 0 auto;
+      justify-content:center;
+      padding: 10px 18px;
+      font-size: 14px;
+    }
+
+    .hero-proof{
+      display:flex; flex-wrap:wrap; gap: 10px;
+      margin-top: 18px;
+      color: var(--muted);
+      font-weight: 600;
+      font-size: 13px;
+    }
+
+    .hero-media{
+      border-radius: var(--radius);
+      background:
+        radial-gradient(380px 280px at 20% 20%, rgba(255,255,255,.10), transparent 60%),
+        radial-gradient(420px 260px at 80% 30%, rgba(255,255,255,.07), transparent 60%),
+        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.10);
+      box-shadow: var(--shadow);
+      overflow:hidden;
+      position:relative;
+      min-height: 260px;
+    }
+    .hero-media::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(520px 380px at 30% 20%, rgba(255,255,255,.10), transparent 60%),
+        radial-gradient(520px 420px at 80% 18%, rgba(19,168,141,.14), transparent 62%),
+        linear-gradient(180deg, rgba(20,23,58,.18) 0%, rgba(20,23,58,.45) 72%, rgba(20,23,58,.62) 100%),
+        linear-gradient(90deg, rgba(20,23,58,.24) 0%, rgba(20,23,58,0) 45%, rgba(20,23,58,.18) 100%);
+      pointer-events:none;
+      z-index: 1;
+    }
+    .hero-media::after{
+      content:"";
+      position:absolute;
+      inset:0;
+      border-radius: inherit;
+      box-shadow:
+        inset 0 0 0 1px rgba(255,255,255,.06),
+        inset 0 0 40px rgba(0,0,0,.22);
+      pointer-events:none;
+      z-index: 2;
+    }
+    .hero-media .img{
+      width: 100%;
+      height: 100%;
+      min-height: 260px;
+      object-fit: cover;
+      opacity: 1;
+      mix-blend-mode: normal;
+      filter: saturate(.92) contrast(1.08) brightness(.98);
+    }
+    .hero-media .badge{
+      position:absolute;
+      left: 14px;
+      bottom: 14px;
+      right: 14px;
+      z-index: 3;
+      display:flex; align-items:center; justify-content:space-between; gap: 12px;
+      padding: 12px 12px;
+      border-radius: 16px;
+      background: rgba(7,20,34,.72);
+      border: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(10px);
+    }
+    .badge strong{font-size: 13.5px}
+    .badge span{font-size: 12.5px; color: var(--muted); font-weight: 600}
+
+    .grid-2{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+      align-items:start;
+    }
+    .card{
+      background: linear-gradient(135deg, rgba(255,255,255,.05), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.10);
+      border-radius: var(--radius);
+      box-shadow: 0 18px 55px rgba(0,0,0,.25);
+    }
+    .card.pad{padding: 18px}
+    .card-title{
+      display:flex; align-items:center; gap:10px;
+      margin:0 0 8px;
+      font-size: 16px;
+      letter-spacing:.1px;
+    }
+    .card p{margin:0; color: var(--muted)}
+
+    .about-media{
+      border-radius: var(--radius);
+      overflow:hidden;
+      position:relative;
+      border: 1px solid rgba(255,255,255,.10);
+      background: rgba(255,255,255,.03);
+      min-height: 380px;
+    }
+    .about-media img{width:100%; height:100%; object-fit: cover}
+    .about-media .oab{
+      position:absolute;
+      top: 14px; left: 14px;
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(7,20,34,.72);
+      border: 1px solid rgba(255,255,255,.10);
+      backdrop-filter: blur(10px);
+      color: var(--text);
+      font-weight: 700;
+      font-size: 12.5px;
+    }
+
+    .highlights{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+      margin-top: 14px;
+    }
+    .highlight{
+      display:flex; gap:12px; align-items:flex-start;
+      padding: 14px 14px;
+      border-radius: 16px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.10);
+    }
+    .highlight strong{display:block; font-size: 13.5px}
+    .highlight span{display:block; color: var(--muted); font-weight: 600; font-size: 12.5px}
+
+    .cards{
+      margin-top: 18px;
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+
+    .areas{
+      position:relative;
+    }
+    .areas::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        radial-gradient(800px 380px at 10% 0%, rgba(19,168,141,.14), transparent 60%),
+        radial-gradient(900px 460px at 90% 100%, rgba(255,255,255,.04), transparent 65%);
+      opacity:.8;
+      pointer-events:none;
+      z-index:-1;
+    }
+    .areas .cards{
+      margin-top: 26px;
+    }
+    .areas .cards .card{
+      transition: transform .2s var(--ease), border-color .2s var(--ease), background .2s var(--ease), box-shadow .2s var(--ease);
+      background: linear-gradient(145deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+    }
+    .areas .cards .card:hover{
+      transform: translateY(-4px);
+      border-color: rgba(243,244,250,.26);
+      box-shadow: 0 18px 45px rgba(0,0,0,.40);
+      background: linear-gradient(145deg, rgba(255,255,255,.12), rgba(255,255,255,.03));
+    }
+
+    /* Fundo da seção de depoimentos com imagem fornecida */
+    #depoimentos{
+      position:relative;
+      overflow:hidden;
+    }
+    #depoimentos::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(120deg, rgba(10,14,30,.65) 0%, rgba(10,14,30,.55) 40%, rgba(10,14,30,.45) 100%),
+        url("assets/fundo-lady.png") center center / cover no-repeat;
+      opacity:0.95;
+      z-index:-1;
+    }
+
+    /* Fundo da seção de contato com imagem fornecida */
+    #contato{
+      position:relative;
+      overflow:hidden;
+    }
+    #contato::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:
+        linear-gradient(120deg, rgba(10,14,30,.90) 0%, rgba(10,14,30,.88) 40%, rgba(10,14,30,.80) 100%),
+        url("assets/contato-fundo.png") center center / cover no-repeat;
+      opacity:0.85;
+      z-index:-1;
+    }
+
+    .quote{
+      display:flex; flex-direction:column; gap: 12px;
+      padding: 18px;
+    }
+    .quote p{margin:0; color: rgba(245,247,251,.92)}
+    .quote footer{display:flex; align-items:center; justify-content:space-between; gap:12px}
+    .quote footer strong{font-size: 13.5px}
+    .quote footer span{font-size: 12.5px; color: var(--muted); font-weight: 600}
+
+    .carousel{
+      position:relative;
+      margin-top: 18px;
+    }
+    .carousel-track{
+      display:grid;
+      grid-auto-flow: column;
+      grid-auto-columns: 86%;
+      gap: 12px;
+      overflow:auto;
+      scroll-snap-type: x mandatory;
+      padding-bottom: 10px;
+      -webkit-overflow-scrolling: touch;
+    }
+    .carousel-track::-webkit-scrollbar{height:8px}
+    .carousel-track::-webkit-scrollbar-thumb{background: rgba(255,255,255,.10); border-radius: 999px}
+    .carousel .card{scroll-snap-align: start}
+    .carousel-controls{
+      display:none;
+      justify-content:flex-end;
+      gap:10px;
+      margin-top: 10px;
+    }
+    .icon-btn{
+      width: 44px; height: 44px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.04);
+      border: 1px solid rgba(255,255,255,.12);
+      display:grid; place-items:center;
+      cursor:pointer;
+      transition: transform .18s var(--ease), border-color .18s var(--ease), background .18s var(--ease);
+    }
+    .icon-btn:hover{border-color: rgba(243,244,250,.28); transform: translateY(-1px)}
+
+    .cta-strong{
+      border-radius: calc(var(--radius) + 6px);
+      padding: 18px;
+      background:
+        radial-gradient(700px 300px at 10% 0%, rgba(255,255,255,.12), transparent 55%),
+        linear-gradient(135deg, rgba(255,255,255,.06), rgba(255,255,255,.02));
+      border: 1px solid rgba(255,255,255,.18);
+      box-shadow: 0 18px 55px rgba(0,0,0,.25);
+    }
+    .cta-strong h3{
+      font-family: "Playfair Display", ui-serif, Georgia, "Times New Roman", Times, serif;
+      font-size: 24px;
+      margin: 0 0 8px;
+      letter-spacing:.2px;
+    }
+    .cta-strong p{margin:0; color: var(--muted)}
+    .cta-strong .row{display:flex; flex-direction:column; gap: 12px; margin-top: 14px}
+
+    form{
+      display:grid;
+      gap: 12px;
+      margin-top: 16px;
+    }
+    label{font-weight: 650; font-size: 13px}
+    .field{
+      display:grid; gap: 7px;
+    }
+    input, textarea{
+      width:100%;
+      border-radius: 14px;
+      border: 1px solid rgba(255,255,255,.12);
+      background: rgba(255,255,255,.04);
+      color: var(--text);
+      padding: 14px 14px;
+      min-height: 48px;
+      font: inherit;
+      font-size: 16px;
+      outline:none;
+      transition: border-color .18s var(--ease), background .18s var(--ease);
+      -webkit-appearance: none;
+      appearance: none;
+    }
+    textarea{min-height: 120px; resize: vertical}
+    input::placeholder, textarea::placeholder{color: rgba(183,195,208,.75)}
+    input:focus, textarea:focus{border-color: rgba(243,244,250,.30); background: rgba(255,255,255,.06)}
+    .form-row{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .form-hint{
+      margin: 0;
+      color: var(--muted);
+      font-size: 12.5px;
+    }
+
+    footer.footer{
+      padding: 28px 0 40px;
+      border-top: 1px solid rgba(255,255,255,.08);
+      background: rgba(20,23,58,.50);
+      margin-top: 10px;
+    }
+    .footer-grid{
+      display:grid;
+      grid-template-columns: 1fr;
+      gap: 12px;
+    }
+    .legal{color: var(--muted); font-size: 12.5px}
+    .social{
+      display:flex; flex-wrap:wrap; gap:10px;
+      margin-top: 10px;
+    }
+    .social a{
+      padding: 10px 12px;
+      border-radius: 14px;
+      background: rgba(255,255,255,.03);
+      border: 1px solid rgba(255,255,255,.10);
+      color: var(--text);
+      font-weight: 650;
+      font-size: 13px;
+      transition: border-color .18s var(--ease), transform .18s var(--ease), background .18s var(--ease);
+    }
+    .social a:hover{border-color: rgba(243,244,250,.28); transform: translateY(-1px)}
+
+    .floating-wa{
+      position: fixed;
+      right: 12px;
+      bottom: 12px;
+      z-index: 60;
+      display:flex; align-items:center; gap:8px;
+      padding: 10px 14px;
+      min-height: 48px;
+      border-radius: 999px;
+      background: #25D366;
+      border: 1px solid rgba(0,0,0,.10);
+      box-shadow: 0 20px 40px rgba(0,0,0,.35);
+      color:#0A1014;
+      transition: transform .18s var(--ease), opacity .18s var(--ease);
+      animation: btnPulse 1.6s var(--ease) infinite;
+      touch-action: manipulation;
+      max-width: calc(100vw - 24px);
+    }
+    .floating-wa:hover{transform: translateY(-3px)}
+    .floating-wa strong{font-size: 13px; color:#FFFFFF;}
+    .floating-wa span{display:none; color:#FFFFFF; font-size: 11.5px; font-weight: 650}
+
+    .reveal{
+      opacity: 0;
+      transform: translateY(10px);
+      transition: opacity .55s var(--ease), transform .55s var(--ease);
+    }
+    .reveal.visible{
+      opacity:1;
+      transform: translateY(0);
+    }
+
+    .skip-link{
+      position:absolute;
+      left: -999px;
+      top: 10px;
+      background: var(--gold);
+      color: #14173A;
+      padding: 10px 12px;
+      border-radius: 12px;
+      font-weight: 800;
+      z-index: 100;
+    }
+    .skip-link:focus{left: 10px}
+
+    /* Cabeçalho e hero ajustados para smartphones */
+    @media (max-width: 719px){
+      #sobre .grid-2 .about-media{ order: -1; }
+      .header-inner{height: 54px; gap: 8px}
+      .brand{gap: 8px; min-width: auto}
+      .brand-mark{width: 36px; height: 36px; border-radius: 10px}
+      .brand-title strong{font-size: 13.5px}
+      .brand-title span{font-size: 10.5px}
+      .hamburger{width: 40px; height: 40px; border-radius: 10px}
+      .header-actions{gap: 6px}
+      main{padding-top: 68px}
+      .mobile-nav{top: 54px}
+    }
+
+    /* ===== SMARTPHONE PEQUENO (até 374px) ===== */
+    @media (max-width: 374px){
+      .hero h1{font-size: 24px; line-height: 1.1}
+      .hero p.lead{font-size: 13.5px}
+      .section-title{font-size: 22px}
+      #sobre .section-title{font-size: 22px}
+      #depoimentos .section-title{font-size: 22px}
+      #areas .section-title{font-size: 24px}
+      .brand-mark{width: 32px; height: 32px}
+      .brand-title strong{font-size: 12.5px}
+      .brand-title span{font-size: 9.5px}
+      .header-inner{height: 48px; gap: 4px}
+      main{padding-top: 62px}
+      .mobile-nav{top: 48px}
+      .container{padding: 0 12px}
+      .card.pad{padding: 12px}
+      .hero-ctas .btn{font-size: 13px; padding: 10px 14px; width: 100%}
+      .pill{font-size: 11px; padding: 6px 10px}
+      .hero-proof{gap: 6px}
+      .hero-proof .pill{font-size: 10.5px}
+      .quote p{font-size: 13.5px}
+      .carousel-track{grid-auto-columns: 92%}
+      .about-media{min-height: 260px}
+      .cta-strong h3{font-size: 20px}
+      .footer-grid{gap: 20px}
+      .floating-wa strong{font-size: 12px}
+      .floating-wa{padding: 8px 12px; right: 8px; bottom: 8px}
+      audio{max-width: 110px !important}
+      .header-actions .legal{display: none}
+      .grid-2{gap: 14px}
+    }
+
+    /* ===== SMARTPHONE (375px–479px) ===== */
+    @media (min-width: 375px) and (max-width: 479px){
+      .hero h1{font-size: 28px; line-height: 1.08}
+      .hero p.lead{font-size: 14px}
+      .carousel-track{grid-auto-columns: 88%}
+      .hero-ctas .btn{width: 100%}
+      .about-media{min-height: 300px}
+      audio{max-width: 130px !important}
+    }
+
+    /* ===== SMARTPHONE GRANDE / PHABLET (480px–719px) ===== */
+    @media (min-width: 480px) and (max-width: 719px){
+      .hero h1{font-size: 32px}
+      .hero p.lead{font-size: 15px}
+      .cards{grid-template-columns: repeat(2, 1fr)}
+      .highlights{grid-template-columns: repeat(2, 1fr)}
+      .carousel-track{grid-auto-columns: 68%}
+      .footer-grid{grid-template-columns: 1fr 1fr; gap: 16px}
+      .grid-2{grid-template-columns: 1fr; gap: 18px}
+      .about-media{min-height: 340px}
+    }
+
+    /* ===== TABLET / iPAD VERTICAL (720px–1023px) ===== */
+    @media (min-width: 720px){
+      .container{padding:0 24px}
+      .hero h1{font-size: 40px}
+      .hero p.lead{font-size: 15.5px; max-width: 56ch}
+      .hero-grid{grid-template-columns: 1fr; gap: 18px}
+      .hero .reveal{max-width: 80%}
+      .hero-media{min-height: 380px}
+      .hero-media .img{min-height: 380px}
+      .grid-2{grid-template-columns: 1.1fr 1fr; gap: 22px}
+      /* Sobre: texto à esquerda, retrato à direita */
+      #sobre .grid-2{
+        grid-template-columns: 1.15fr 1fr;
+        gap: 28px;
+        align-items: center;
+      }
+      .cards{grid-template-columns: repeat(2, 1fr)}
+      .highlights{grid-template-columns: repeat(2, 1fr)}
+      .cta-strong{padding: 22px}
+      .cta-strong .row{flex-direction:row; align-items:center; justify-content:space-between}
+      .cta-strong h3{font-size: 28px}
+      #sobre .section-title{font-size: 30px}
+      #depoimentos .section-title{font-size: 30px}
+      #areas .section-title{font-size: 40px}
+      #areas .section-subtitle{font-size: 16px}
+      .hero-ctas{justify-content:flex-start}
+      .form-row{grid-template-columns: 1fr 1fr}
+      .carousel-track{grid-auto-columns: 46%}
+      .carousel-controls{display:flex}
+      .floating-wa span{display:block}
+      .floating-wa{right: 18px; bottom: 18px}
+      .footer-grid{grid-template-columns: 1fr 1fr; gap: 18px}
+      .section{padding: 56px 0}
+      .about-media{min-height: 400px}
+      .quote p{font-size: 15px}
+    }
+
+    /* ===== iPAD HORIZONTAL / DESKTOP PEQUENO (1024px–1279px) ===== */
+    @media (min-width: 1024px){
+      nav.nav{display:flex}
+      .hamburger{display:none}
+      .mobile-nav{display:none !important}
+      .hero{padding: 40px 0 50px; min-height: 72vh}
+      .hero h1{font-size: 46px}
+      .hero-grid{
+        grid-template-columns: 1.05fr .95fr;
+        align-items:center;
+      }
+      .hero .reveal{
+        max-width: 640px;
+        margin-top: 40px;
+      }
+      .section{padding: 64px 0}
+      .cards{grid-template-columns: repeat(4, 1fr)}
+      .carousel-track{grid-auto-columns: 32%}
+      .footer-grid{grid-template-columns: 1.4fr 1fr 1fr; align-items:start}
+      #sobre .section-title{font-size: 34px}
+      #depoimentos .section-title{font-size: 34px}
+      #areas .section-title{font-size: 46px}
+    }
+
+    /* ===== DESKTOP GRANDE (1280px+) ===== */
+    @media (min-width: 1280px){
+      .container{padding: 0 28px}
+      .hero h1{font-size: 50px}
+      .hero p.lead{font-size: 16.5px; max-width: 62ch}
+      #sobre .section-title{font-size: 38px}
+      #depoimentos .section-title{font-size: 38px}
+    }
+
+    /* ===== ACESSIBILIDADE ===== */
+    @media (prefers-reduced-motion: reduce){
+      *{scroll-behavior:auto !important}
+      .reveal{opacity:1 !important; transform:none !important; transition:none !important}
+      .btn, .areas .cards .card, .icon-btn, .floating-wa, .social a{transition:none !important}
+    }
+
+    @media (prefers-contrast: high){
+      :root{
+        --muted:#E0E4F0;
+        --line:rgba(255,255,255,.25);
+      }
+      .card{border-color: rgba(255,255,255,.22)}
+      .highlight{border-color: rgba(255,255,255,.22)}
+    }
+
+    /* Orientação paisagem em smartphones */
+    @media (max-height: 500px) and (orientation: landscape){
+      .hero{min-height: auto; padding: 24px 0 30px}
+      .hero h1{font-size: 28px}
+      .hero-proof{margin-top: 10px}
+      .floating-wa strong{display: none}
+      .floating-wa{padding: 10px}
+    }
+
+    /* Ajustes específicos para iPad Mini (768px) */
+    @media (min-width: 768px) and (max-width: 1023px){
+      .hero h1{font-size: 42px}
+      .grid-2{grid-template-columns: 1fr 1fr; gap: 24px}
+      #sobre .grid-2{align-items: center}
+      .carousel-track{grid-auto-columns: 42%}
+      .section{padding: 60px 0}
+    }
+
+    /* Focus visible para acessibilidade via teclado */
+    a:focus-visible,
+    button:focus-visible,
+    input:focus-visible,
+    textarea:focus-visible{
+      outline: 3px solid rgba(243,244,250,.45);
+      outline-offset: 3px;
+    }
+
+    /* Imagens responsivas */
+    img{
+      max-width: 100%;
+      height: auto;
+    }
+
+    /* Previne overflow horizontal em mobile */
+    html, body{
+      overflow-x: hidden;
+    }
+
+    /* Safe area para dispositivos com notch (iPhone X+, iPad Pro) */
+    header.header{
+      padding-left: env(safe-area-inset-left);
+      padding-right: env(safe-area-inset-right);
+    }
+    footer.footer{
+      padding-bottom: calc(40px + env(safe-area-inset-bottom));
+    }
+    .floating-wa{
+      bottom: calc(12px + env(safe-area-inset-bottom));
+      right: calc(12px + env(safe-area-inset-right));
+    }
+    .container{
+      padding-left: max(18px, env(safe-area-inset-left));
+      padding-right: max(18px, env(safe-area-inset-right));
+    }
+  </style>
+</head>
+<body>
+  <a class="skip-link" href="#inicio">Pular para o conteúdo</a>
+
+  <header class="header" aria-label="Topo do site">
+    <div class="container header-inner">
+      <a class="brand" href="#inicio" aria-label="Ir para o início">
+        <span class="brand-mark" aria-hidden="true">
+          <img src="assets/ogo-monograma.png" alt="Monograma CQ - Camargo Quintão" />
+        </span>
+        <span class="brand-title">
+          <strong>Dr. Camargo Quintão</strong>
+          <span>Advocacia & Consultoria</span>
+        </span>
+      </a>
+
+      <nav class="nav" aria-label="Menu principal">
+        <a href="#inicio">Início</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#areas">Áreas de atuação</a>
+        <a href="#depoimentos">Depoimentos</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <div class="header-actions" style="gap:12px">
+        <div style="display:flex; align-items:center; gap:4px; max-width:230px">
+          <audio controls preload="auto" style="max-width:150px; width:100%">
+            <source src="assets/musica.mp3" type="audio/mpeg" />
+            Seu navegador não suporta reprodução de áudio.
+          </audio>
+          <span class="legal" style="font-size:9px; line-height:1.2">Clique em play<br/>para ouvir.</span>
+        </div>
+        <button class="hamburger" id="hamburger" aria-label="Abrir menu" aria-controls="mobileNav" aria-expanded="false">
+          <span aria-hidden="true"></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <div class="mobile-nav" id="mobileNav" aria-label="Menu mobile">
+    <div class="container">
+      <a href="#inicio"><span>Início</span><small>Primeira dobra</small></a>
+      <a href="#sobre"><span>Sobre</span><small>Credibilidade</small></a>
+      <a href="#areas"><span>Áreas de atuação</span><small>Como posso ajudar</small></a>
+      <a href="#depoimentos"><span>Depoimentos</span><small>Prova social</small></a>
+      <a href="#contato"><span>Contato</span><small>Agendar consulta</small></a>
+    </div>
+  </div>
+
+  <main id="inicio" tabindex="-1">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="reveal">
+          <img src="assets/hero-logo-transparente.png" alt="Logo Dr. Camargo Quintão" class="hero-logo-mobile" />
+          <span class="pill">
+            <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2l3 7 7 .6-5.3 4.5 1.7 6.9L12 17.8 5.6 21 7.3 14.1 2 9.6 9 9l3-7Z" fill="rgba(243,244,250,.95)"/>
+            </svg>
+            Atendimento on-line para todo o Brasil.
+          </span>
+          <h1>Defesa jurídica estratégica em Direito Médico, Civil, Tributário e Previdenciário.</h1>
+          <p class="lead">
+            Atuação comprometida com equilíbrio, técnica e resultado.
+            Analisamos o seu caso com profundidade, clareza e discrição, oferecendo orientação jurídica segura em momentos decisivos — tanto para pessoas quanto para empresas.
+            <strong>Envie seu caso em até 2 minutos e receba uma resposta inicial em poucas horas.</strong>
+          </p>
+
+          <div class="hero-ctas">
+            <a class="btn btn-primary" id="ctaHeroConsulta" href="#contato">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 2v3M17 2v3M4.5 9.5h15M6.5 6h11A3.5 3.5 0 0 1 21 9.5v9A3.5 3.5 0 0 1 17.5 22h-11A3.5 3.5 0 0 1 3 18.5v-9A3.5 3.5 0 0 1 6.5 6Z" stroke="#0A1320" stroke-width="2" stroke-linecap="round"/>
+                <path d="M8 13h4M8 17h7" stroke="#0A1320" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Agende uma consulta
+            </a>
+          </div>
+
+          <div class="hero-proof" aria-label="Provas de autoridade">
+            <span class="pill"><strong>+500</strong>&nbsp;clientes atendidos</span>
+            <span class="pill"><strong>10+ anos de experiência</strong></span>
+          </div>
+        </div>
+
+        <!-- Bloco de imagem do hero removido a pedido do cliente -->
+      </div>
+    </section>
+
+    <section class="section about" id="sobre">
+      <div class="container grid-2">
+        <div class="reveal about-copy">
+          <h2 class="section-title"><strong>Experiência</strong>, <strong>Seriedade</strong><br/>e <strong>Compromisso Jurídico</strong></h2>
+          <p class="section-subtitle">
+            Possuímos sólida experiência no atendimento a pessoas físicas, pequenas empresas e grandes corporações, atuando de forma técnica e responsável em demandas jurídicas diversas.
+            Atuamos com <strong>seriedade</strong>, <strong>agilidade</strong> e <strong>comprometimento</strong> para atender pessoas e empresas em situações que exigem orientação jurídica segura e decisões urgentes.
+            Nosso compromisso é oferecer acompanhamento próximo, análise responsável e esclarecimento claro, para que cada cliente se sinta amparado nos momentos mais importantes.
+            Atuação estratégica, linguagem simples e foco total em resultado. Meu trabalho é transformar problemas complexos em decisões jurídicas claras.
+          </p>
+
+          <div class="card pad" style="margin-top:16px">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2l7 4v6c0 5-3 9-7 10-4-1-7-5-7-10V6l7-4Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9.5 12.2l1.8 1.8 3.8-4" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Credibilidade e segurança
+            </h3>
+            <p style="font-size:13px; line-height:1.6">
+              Especialista em <strong>Direito Médico</strong>, <strong>Direito Civil</strong>, <strong>Direito Tributário</strong> e <strong>Direito Previdenciário</strong>. Experiência em negociações, acordos e condução de processos com abordagem técnica e humana.
+            </p>
+
+            <div class="highlights" aria-label="Destaques">
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 21s7-4.4 7-11V5l-7-3-7 3v5c0 6.6 7 11 7 11Z" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <strong>10+ anos de experiência prática</strong>
+                </div>
+              </div>
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M4 20h16M7 20V10m10 10V10M4 10h16M8 10l4-6 4 6" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <strong>Atuação técnica</strong>
+                  <span>com estratégia personalizada</span>
+                </div>
+              </div>
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M21 11.5c0 5-4 9-9 9s-9-4-9-9 4-9 9-9c2.6 0 4.9 1 6.6 2.7" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linecap="round"/>
+                  <path d="M21 4v6h-6" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
+                <div>
+                  <strong>Resposta rápida</strong>
+                  <span>com retorno objetivo</span>
+                </div>
+              </div>
+              <div class="highlight">
+                <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                  <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linejoin="round"/>
+                  <path d="M9 12h6" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linecap="round"/>
+                </svg>
+                <div>
+                  <strong>Sigilo absoluto</strong>
+                  <span>em todas as etapas</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="about-media reveal" aria-label="Foto do advogado">
+          <div class="oab">OAB/ES 38970</div>
+          <img alt="Foto do advogado" loading="lazy"
+               src="assets/advogado-about.png" />
+          <div style="position:absolute; left:16px; bottom:14px;">
+            <img src="assets/assinatura.png" alt="Assinatura Dr. Camargo Quintão - Advogado Responsável" style="max-width:170px; height:auto; opacity:0.9" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section areas" id="areas">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Principais áreas de atuação do escritório:</h2>
+          <p class="section-subtitle">
+            Atendimento personalizado para identificar o melhor caminho jurídico e defender seus interesses com firmeza.
+          </p>
+        </div>
+
+        <div class="cards">
+          <article class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 21h10M9 21V7m6 14V7M8 7h8l-1-4H9L8 7Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M6 11h12" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Advogado de Direito Médico em Vitória (ES) e São Paulo
+            </h3>
+            <ul style="margin:0; padding-left:18px; display:grid; gap:8px; color: var(--muted)">
+              <li>Atuação estratégica em processos judiciais de responsabilidade civil para médicos e profissionais da saúde, como advogado de Direito Médico em Vitória (ES) e São Paulo.</li>
+              <li>Direito Defensivo e Preventivo: Consultoria para redução de riscos jurídicos em clínicas e consultórios (análise de prontuários, termos de consentimento e contratos).</li>
+              <li>Processos Ético-Profissionais: Representação junto aos conselhos de classe (CRM, COREN, etc.).</li>
+              <li>Direito da Saúde (Pacientes): Ações para fornecimento de medicamentos, tratamentos e cirurgias negadas pelos planos de saúde.</li>
+            </ul>
+          </article>
+
+          <article class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 20h16M7 20V10m10 10V10M4 10h16M8 10l4-6 4 6" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Advogado de Direito Civil em Vitória (ES) e São Paulo
+            </h3>
+            <ul style="margin:10px 0 0; padding-left:18px; display:grid; gap:8px; color: var(--muted)">
+              <li>Desbloqueio de contas bancárias e bloqueio de salário, com foco em defesa do consumidor.</li>
+              <li>Busca e apreensão</li>
+              <li>Revisão de Juros Abusivos</li>
+              <li>Reserva de Margem Consignável (RMC)</li>
+              <li>Contratos em geral</li>
+              <li>Cobranças e execuções</li>
+              <li>Indenizações e responsabilidade civil</li>
+              <li>Obrigações e direitos patrimoniais</li>
+              <li>Defesa do consumidor</li>
+              <li>Atuação judicial e extrajudicial</li>
+            </ul>
+          </article>
+
+          <article class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2a9 9 0 1 0 9 9" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M21 3v6h-6" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M8 13.5c1 1.2 2.2 1.8 4 1.8 2.2 0 4-1.3 4-3.3 0-1.9-1.7-2.7-3.7-3" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Advogado de Direito Tributário em Vitória (ES) e São Paulo
+            </h3>
+            <ul style="margin:10px 0 0; padding-left:18px; display:grid; gap:8px; color: var(--muted)">
+              <li>Restituição de IPVS Autismo e restituição de IR para pessoas com Autismo.</li>
+              <li>Restituição de IR escolar Autismo</li>
+              <li>Restituição de IR Aposentado com Doença Grave</li>
+              <li>Defesa e execução fiscal IPTU, IPVA</li>
+              <li>Planejamento tributário</li>
+              <li>Defesa em autos de infração</li>
+              <li>Execuções fiscais</li>
+              <li>Tributos federais, estaduais e municipais</li>
+              <li>Regularização e parcelamento de débitos</li>
+              <li>Atuação administrativa e judicial</li>
+            </ul>
+          </article>
+
+          <article class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16v14H4V7Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M7 7V5a2 2 0 0 1 2-2h6a2 2 0 0 1 2 2v2" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M4 12h16" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Advogado de Direito Previdenciário em Vitória (ES) e São Paulo
+            </h3>
+            <ul style="margin:10px 0 0; padding-left:18px; display:grid; gap:8px; color: var(--muted)">
+              <li>Aposentadorias e planejamento previdenciário, inclusive revisão de benefício previdenciário em Vitória (ES) e São Paulo.</li>
+              <li>Benefícios por incapacidade</li>
+              <li>Pensão por morte</li>
+              <li>BPC/LOAS</li>
+              <li>Revisões de benefícios</li>
+              <li>Atuação administrativa e judicial</li>
+              <li>Auxilio por acidente</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="depoimentos">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Depoimentos</h2>
+          <p class="section-subtitle">
+            Resultados e atendimento que geram confiança. Alguns relatos de clientes.
+          </p>
+        </div>
+
+        <div class="carousel reveal" aria-label="Depoimentos de clientes">
+          <div class="carousel-track" id="carouselTrack">
+            <article class="card quote">
+              <p>“Tive o meu salário bloqueado e estava muito preocupado. O atendimento foi rápido, claro e extremamente profissional. Recebi toda a orientação necessária e me senti amparado em um momento de urgência. Recomendo pela seriedade e atenção.”</p>
+              <footer><strong>Heloisa C.</strong><span>Guarulhos/SP</span></footer>
+            </article>
+            <article class="card quote">
+              <p>“Profissional extremamente técnico e humano. Negociação bem conduzida e resultado acima do esperado.
+              Os descontos de RMC estavam comprometendo minha renda mensal e eu já não conseguia organizar minhas contas. Não recebi explicações claras do banco e me senti completamente perdido.
+              Ao procurar o escritório, fui atendido com atenção e seriedade. Cada etapa foi explicada com clareza e houve acompanhamento constante em um momento extremamente delicado. O suporte jurídico foi fundamental para eu recuperar segurança e tranquilidade.”</p>
+              <footer><strong>Maciel T.</strong><span>Vitória/ES</span></footer>
+            </article>
+            <article class="card quote">
+              <p>“Transparência do início ao fim. Recomendo pelo compromisso com o cliente e pela estratégia do caso.
+              Descobrir o direito à restituição do imposto foi um alívio para nossa família. O atendimento foi humano, claro e muito cuidadoso, especialmente por se tratar de uma situação sensível ligada ao autismo. Ter orientação jurídica do Dr. Camargo fez toda a diferença.”</p>
+              <footer><strong>Luciana P.</strong><span>Curitiba/PR</span></footer>
+            </article>
+            <article class="card quote">
+              <p>“Atendimento online impecável. Recebi orientação objetiva, documentação organizada e acompanhamento constante.”</p>
+              <footer><strong>Bruno M.</strong><span>Rio de Janeiro/RJ</span></footer>
+            </article>
+          </div>
+
+          <div class="carousel-controls" aria-label="Controles do carrossel">
+            <button class="icon-btn" type="button" id="prevDepo" aria-label="Depoimento anterior">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M15 18l-6-6 6-6" stroke="rgba(245,247,251,.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+            <button class="icon-btn" type="button" id="nextDepo" aria-label="Próximo depoimento">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M9 6l6 6-6 6" stroke="rgba(245,247,251,.9)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="diferenciais">
+      <div class="container">
+        <div class="reveal">
+          <h2 class="section-title">Diferenciais</h2>
+          <p class="section-subtitle">
+            Atendimento premium com foco em agilidade, sigilo e uma estratégia que faz sentido para o seu caso.
+          </p>
+        </div>
+
+        <div class="cards" style="margin-top:18px">
+          <div class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 22a8 8 0 1 0-8-8" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linecap="round"/>
+                <path d="M2 12h8l2-3 2 6 2-3h6" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Atendimento rápido
+            </h3>
+            <p>Respostas objetivas e direcionamento inicial com clareza de prazos e próximos passos.</p>
+          </div>
+
+          <div class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16v10H4V7Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8 21h8" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Atendimento online
+            </h3>
+            <p>Consultas por vídeo e WhatsApp, com praticidade e segurança para você e sua família.</p>
+          </div>
+
+          <div class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 22s8-4 8-10V6l-8-4-8 4v6c0 6 8 10 8 10Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M9.5 12h5" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Sigilo absoluto
+            </h3>
+            <p>Confidencialidade e respeito em todos os atendimentos, documentos e conversas.</p>
+          </div>
+
+          <div class="card pad reveal">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M7 7h10v10H7V7Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M4 4h6M14 4h6M4 20h6M14 20h6" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round"/>
+              </svg>
+              Estratégias personalizadas
+            </h3>
+            <p>Análise detalhada do caso para definir a melhor linha de atuação e maximizar resultados.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="cta-strong reveal" aria-label="Chamada para ação principal">
+          <div class="row">
+            <div>
+              <h3>Fale agora com um especialista</h3>
+              <p>Explique seu caso e receba uma orientação inicial para decidir com segurança.</p>
+            </div>
+            <a class="btn btn-primary" id="ctaStrongWhats" href="https://wa.me/5511910765767" target="_blank" rel="noopener">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20.5 11.8a8.5 8.5 0 0 1-12.9 7.2L3.5 20.5l1.5-3.8A8.5 8.5 0 1 1 20.5 11.8Z" stroke="#0A1320" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8.4 9.2c.2-.6.5-.7.9-.7h.7c.2 0 .4 0 .6.4l.8 1.8c.1.2.1.5 0 .6l-.4.5c-.1.1-.2.3-.1.5.1.4.6 1.2 1.3 1.8.8.7 1.5.9 1.9 1 .2.1.4 0 .5-.1l.6-.7c.2-.2.4-.2.6-.1l2 .9c.3.1.4.4.3.7-.1.6-.6 1.4-1.2 1.7-.5.3-1.2.4-2.6-.1-1.4-.5-3.1-1.7-4.5-3.7-1.4-2-1.8-3.8-1.8-4.6 0-.6.2-1.2.4-1.6Z" fill="#0A1320" opacity=".85"/>
+              </svg>
+              Falar no WhatsApp agora
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="contato">
+      <div class="container grid-2">
+        <div class="reveal">
+          <h2 class="section-title">Contato</h2>
+          <p class="section-subtitle">
+            Preencha o formulário e envie sua mensagem. Você também pode chamar direto no WhatsApp — rápido e prático.
+          </p>
+
+          <div class="card pad" style="margin-top:16px">
+            <h3 class="card-title">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M3 5h18v14H3V5Z" stroke="rgba(243,244,250,.95)" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M3 7l9 7 9-7" stroke="rgba(243,244,250,.65)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Mensagem direta (WhatsApp)
+            </h3>
+            <p>Para resposta mais rápida, use o botão de WhatsApp. Seu atendimento será confidencial.</p>
+            <div class="hero-ctas" style="margin-top:14px">
+              <a class="btn btn-primary" id="ctaContatoWhats" href="https://wa.me/5511910765767" target="_blank" rel="noopener">
+                Falar no WhatsApp agora
+              </a>
+              <a class="btn btn-ghost" href="mailto:camargoquintao.juridico@gmail.com?subject=Atendimento%20Jur%C3%ADdico&body=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20atendimento.">
+                Prefiro falar por e-mail
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <div class="card pad reveal" aria-label="Formulário de contato">
+          <h3 class="card-title" style="margin-bottom:4px">Agende sua consulta</h3>
+          <p class="form-hint">Ao enviar, sua mensagem será aberta no WhatsApp (com o texto já preenchido).</p>
+
+          <form id="leadForm" novalidate>
+            <div class="form-row">
+              <div class="field">
+                <label for="nome">Nome</label>
+                <input id="nome" name="nome" type="text" autocomplete="name" placeholder="Seu nome completo" required minlength="3" />
+              </div>
+              <div class="field">
+                <label for="telefone">Telefone</label>
+                <input id="telefone" name="telefone" type="tel" inputmode="tel" autocomplete="tel" placeholder="(DD) 9xxxx-xxxx" required />
+              </div>
+            </div>
+
+            <div class="field">
+              <label for="mensagem">Mensagem</label>
+              <textarea id="mensagem" name="mensagem" placeholder="Conte em poucas linhas o que aconteceu e como posso ajudar." required minlength="10"></textarea>
+            </div>
+
+            <button class="btn btn-primary" type="submit" id="btnEnviar">
+              <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M22 2 11 13" stroke="#0A1320" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                <path d="M22 2 15 22l-4-9-9-4 20-7Z" fill="#0A1320" opacity=".85"/>
+              </svg>
+              Enviar e falar no WhatsApp
+            </button>
+
+            <p class="form-hint">Suas informações são tratadas com sigilo absoluto.</p>
+            <p class="form-hint" id="formStatus" role="status" aria-live="polite"></p>
+          </form>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer" aria-label="Rodapé">
+    <div class="container footer-grid">
+      <div>
+        <div class="brand" style="min-width:auto">
+          <span class="brand-mark" aria-hidden="true">
+            <img src="assets/ogo-monograma.png" alt="Monograma CQ - Camargo Quintão" />
+          </span>
+          <span class="brand-title">
+            <strong>Dr. Camargo Quintão</strong>
+            <span>Advocacia & Consultoria</span>
+          </span>
+        </div>
+        <p class="legal" style="margin:10px 0 0">
+          OAB/ES 38970 • Atendimento mediante agendamento • Conteúdo informativo — não substitui consulta jurídica.
+        </p>
+      </div>
+
+      <div>
+        <strong style="display:block; margin-bottom:8px">Endereço</strong>
+        <p class="legal" style="margin:0">Av. Nossa Sra. da Penha, 1491 - Santa Lúcia<br/>Vitória - ES • CEP 29056-243</p>
+      </div>
+
+      <div>
+        <strong style="display:block; margin-bottom:8px">Redes sociais</strong>
+        <div class="social">
+          <a href="https://www.instagram.com/camargoquintao.adv/" target="_blank" rel="noopener" aria-label="Instagram Camargo Quintão">Instagram</a>
+          <a href="https://maps.app.goo.gl/HnM9uWgqgFqrymi47" target="_blank" rel="noopener" aria-label="Google Maps - Escritório Camargo Quintão">Google Maps</a>
+          <a href="mailto:camargoquintao.juridico@gmail.com?subject=Atendimento%20Jur%C3%ADdico&body=Ol%C3%A1,%20gostaria%20de%20mais%20informa%C3%A7%C3%B5es%20sobre%20atendimento." aria-label="Enviar e-mail para Camargo Quintão">E-mail</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <a class="floating-wa" id="floatingWA" href="https://wa.me/5511910765767" target="_blank" rel="noopener" aria-label="WhatsApp flutuante">
+    <svg class="icon" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+      <path d="M12 2C6.75 2 2.5 6.25 2.5 11.5c0 1.98.58 3.83 1.59 5.39L2 22l5.27-2.02A9.46 9.46 0 0 0 12 21c5.25 0 9.5-4.25 9.5-9.5S17.25 2 12 2Z" fill="#25D366"/>
+      <path d="M10.2 8.2c-.2-.45-.4-.46-.58-.47h-.5c-.17 0-.44.06-.68.31s-.89.87-.89 2.12.91 2.46 1.04 2.63c.13.17 1.76 2.7 4.34 3.68 2.15.85 2.59.68 3.06.64.47-.04 1.51-.62 1.72-1.23.21-.61.21-1.13.15-1.23-.06-.1-.24-.16-.5-.29s-1.51-.74-1.74-.83c-.23-.09-.4-.14-.58.14-.17.27-.66.83-.81 1-.15.17-.3.19-.56.07-.26-.12-1.1-.4-2.1-1.27-.78-.7-1.3-1.56-1.45-1.82-.15-.26-.02-.4.11-.53.11-.11.26-.29.39-.43.13-.14.17-.23.26-.4.09-.17.04-.31-.02-.43-.06-.12-.53-1.32-.75-1.8Z" fill="#FFFFFF"/>
+    </svg>
+    <div>
+      <strong>Falar no WhatsApp agora</strong>
+    </div>
+  </a>
+
+  <script>
+    // Configuração rápida (troque apenas estes valores).
+    const WHATSAPP_NUMBER = "5511910765767"; // Ex.: "5511999999999" (DDI+DDD+NÚMERO, sem + e sem espaços)
+    const ADVOGADO_NOME = "Dr. Camargo Quintão";
+
+    const waBase = `https://wa.me/${WHATSAPP_NUMBER}`;
+
+    function buildWaLink(text){
+      const msg = encodeURIComponent(text.trim());
+      return `${waBase}?text=${msg}`;
+    }
+
+    function setHref(id, href){
+      const el = document.getElementById(id);
+      if (el) el.setAttribute("href", href);
+    }
+
+    // Atualiza todos os links de WhatsApp (sem depender de frameworks)
+    const defaultMsg = `Olá, ${ADVOGADO_NOME}. Gostaria de agendar uma consulta.`;
+    const defaultHref = buildWaLink(defaultMsg);
+    ["ctaHeroWhats","ctaHeroMini","ctaStrongWhats","ctaContatoWhats","floatingWA"].forEach(id => setHref(id, defaultHref));
+
+    // Menu mobile (hambúrguer)
+    const hamburger = document.getElementById("hamburger");
+    const mobileNav = document.getElementById("mobileNav");
+
+    function closeNav(){
+      document.body.classList.remove("nav-open");
+      hamburger?.setAttribute("aria-expanded", "false");
+    }
+    function toggleNav(){
+      const open = document.body.classList.toggle("nav-open");
+      hamburger?.setAttribute("aria-expanded", open ? "true" : "false");
+    }
+
+    hamburger?.addEventListener("click", toggleNav);
+    mobileNav?.addEventListener("click", (e) => {
+      const a = e.target.closest("a");
+      if (a) closeNav();
+    });
+    window.addEventListener("keydown", (e) => { if (e.key === "Escape") closeNav(); });
+
+    // Realce de navegação: fecha menu ao clicar em links do header (desktop)
+    document.querySelectorAll('a[href^="#"]').forEach((a) => {
+      a.addEventListener("click", () => closeNav());
+    });
+
+    // Carrossel (depende só do scroll horizontal)
+    const track = document.getElementById("carouselTrack");
+    const prev = document.getElementById("prevDepo");
+    const next = document.getElementById("nextDepo");
+    const scrollByCard = (dir) => {
+      if (!track) return;
+      const card = track.querySelector(".card");
+      const amount = (card?.getBoundingClientRect().width || 320) + 12;
+      track.scrollBy({ left: dir * amount, behavior: "smooth" });
+    };
+    prev?.addEventListener("click", () => scrollByCard(-1));
+    next?.addEventListener("click", () => scrollByCard(1));
+
+    // Swipe touch no carrossel para dispositivos móveis
+    let touchStartX = 0;
+    let touchEndX = 0;
+    track?.addEventListener("touchstart", (e) => {
+      touchStartX = e.changedTouches[0].screenX;
+    }, {passive: true});
+    track?.addEventListener("touchend", (e) => {
+      touchEndX = e.changedTouches[0].screenX;
+      const diff = touchStartX - touchEndX;
+      if (Math.abs(diff) > 50) {
+        scrollByCard(diff > 0 ? 1 : -1);
+      }
+    }, {passive: true});
+
+    // Animação suave (fade-in) ao aparecer na tela
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach((entry) => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+          observer.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12 });
+    document.querySelectorAll(".reveal").forEach((el) => observer.observe(el));
+
+    // Formulário -> abre WhatsApp com mensagem pronta (alta conversão)
+    const form = document.getElementById("leadForm");
+    const statusEl = document.getElementById("formStatus");
+
+    function sanitizePhone(value){
+      const digits = (value || "").replace(/\D/g, "");
+      return digits;
+    }
+
+    form?.addEventListener("submit", (e) => {
+      e.preventDefault();
+      statusEl.textContent = "";
+
+      const nome = document.getElementById("nome")?.value?.trim() || "";
+      const telefone = document.getElementById("telefone")?.value?.trim() || "";
+      const mensagem = document.getElementById("mensagem")?.value?.trim() || "";
+
+      if (nome.length < 3){
+        statusEl.textContent = "Por favor, informe seu nome completo.";
+        return;
+      }
+      if (sanitizePhone(telefone).length < 10){
+        statusEl.textContent = "Por favor, informe um telefone válido (com DDD).";
+        return;
+      }
+      if (mensagem.length < 10){
+        statusEl.textContent = "Por favor, descreva sua mensagem com um pouco mais de detalhe.";
+        return;
+      }
+
+      const text = [
+        `Olá, ${ADVOGADO_NOME}.`,
+        `Meu nome é ${nome}.`,
+        `Telefone: ${telefone}.`,
+        ``,
+        `Mensagem: ${mensagem}`
+      ].join("\n");
+
+      const href = buildWaLink(text);
+      statusEl.textContent = "Abrindo WhatsApp...";
+      window.open(href, "_blank", "noopener");
+    });
+  </script>
+</body>
+</html>
