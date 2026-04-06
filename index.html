@@ -750,6 +750,7 @@
 
     /* Cabeçalho e hero ajustados para smartphones */
     @media (max-width: 719px){
+      #sobre .grid-2 .about-media{ order: -1; }
       .header-inner{height: 54px; gap: 8px}
       .brand{gap: 8px; min-width: auto}
       .brand-mark{width: 36px; height: 36px; border-radius: 10px}
@@ -825,6 +826,12 @@
       .hero-media{min-height: 380px}
       .hero-media .img{min-height: 380px}
       .grid-2{grid-template-columns: 1.1fr 1fr; gap: 22px}
+      /* Sobre: texto à esquerda, retrato à direita */
+      #sobre .grid-2{
+        grid-template-columns: 1.15fr 1fr;
+        gap: 28px;
+        align-items: center;
+      }
       .cards{grid-template-columns: repeat(2, 1fr)}
       .highlights{grid-template-columns: repeat(2, 1fr)}
       .cta-strong{padding: 22px}
@@ -908,6 +915,7 @@
     @media (min-width: 768px) and (max-width: 1023px){
       .hero h1{font-size: 42px}
       .grid-2{grid-template-columns: 1fr 1fr; gap: 24px}
+      #sobre .grid-2{align-items: center}
       .carousel-track{grid-auto-columns: 42%}
       .section{padding: 60px 0}
     }
@@ -1028,7 +1036,7 @@
 
           <div class="hero-proof" aria-label="Provas de autoridade">
             <span class="pill"><strong>+500</strong>&nbsp;clientes atendidos</span>
-            <span class="pill"><strong>10+</strong>&nbsp;anos de experiência</span>
+            <span class="pill"><strong>10+ anos de experiência</strong></span>
           </div>
         </div>
 
@@ -1038,16 +1046,7 @@
 
     <section class="section about" id="sobre">
       <div class="container grid-2">
-        <div class="about-media reveal" aria-label="Foto do advogado">
-          <div class="oab">OAB/ES 38970</div>
-          <img alt="Foto do advogado" loading="lazy"
-               src="assets/advogado-about.png" />
-          <div style="position:absolute; left:16px; bottom:14px;">
-            <img src="assets/assinatura.png" alt="Assinatura Dr. Camargo Quintão - Advogado Responsável" style="max-width:170px; height:auto; opacity:0.9" />
-          </div>
-        </div>
-
-        <div class="reveal">
+        <div class="reveal about-copy">
           <h2 class="section-title"><strong>Experiência</strong>, <strong>Seriedade</strong><br/>e <strong>Compromisso Jurídico</strong></h2>
           <p class="section-subtitle">
             Possuímos sólida experiência no atendimento a pessoas físicas, pequenas empresas e grandes corporações, atuando de forma técnica e responsável em demandas jurídicas diversas.
@@ -1074,8 +1073,7 @@
                   <path d="M12 21s7-4.4 7-11V5l-7-3-7 3v5c0 6.6 7 11 7 11Z" stroke="rgba(245,247,251,.85)" stroke-width="2" stroke-linejoin="round"/>
                 </svg>
                 <div>
-                  <strong>10+ anos</strong>
-                  <span>de experiência prática</span>
+                  <strong>10+ anos de experiência prática</strong>
                 </div>
               </div>
               <div class="highlight">
@@ -1108,6 +1106,15 @@
                 </div>
               </div>
             </div>
+          </div>
+        </div>
+
+        <div class="about-media reveal" aria-label="Foto do advogado">
+          <div class="oab">OAB/ES 38970</div>
+          <img alt="Foto do advogado" loading="lazy"
+               src="assets/advogado-about.png" />
+          <div style="position:absolute; left:16px; bottom:14px;">
+            <img src="assets/assinatura.png" alt="Assinatura Dr. Camargo Quintão - Advogado Responsável" style="max-width:170px; height:auto; opacity:0.9" />
           </div>
         </div>
       </div>
